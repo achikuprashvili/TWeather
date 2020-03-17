@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Future ForecastVC-->
+        <scene sceneID="BDy-VB-KkN">
+            <objects>
+                <viewController storyboardIdentifier="FutureForecastVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nKZ-gc-azh" customClass="FutureForecastVC" customModule="TWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jhv-Hu-hDP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eez-21-PIM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eez-21-PIM" firstAttribute="height" secondItem="WXr-05-Y6j" secondAttribute="height" id="Akf-US-yI7"/>
+                            <constraint firstItem="Eez-21-PIM" firstAttribute="centerY" secondItem="WXr-05-Y6j" secondAttribute="centerY" id="b0u-Ef-fln"/>
+                            <constraint firstItem="Eez-21-PIM" firstAttribute="width" secondItem="WXr-05-Y6j" secondAttribute="width" id="rmH-lu-bm0"/>
+                            <constraint firstItem="Eez-21-PIM" firstAttribute="centerX" secondItem="WXr-05-Y6j" secondAttribute="centerX" id="rqC-kZ-GnY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WXr-05-Y6j"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Eez-21-PIM" id="HDC-Jd-peo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWA-sf-PGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="-223"/>
+        </scene>
+    </scenes>
+</document>
