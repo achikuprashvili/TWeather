@@ -121,7 +121,7 @@ class TodaysForecastVC: UIViewController, MVVMViewController {
         horizontalStackView2.addArrangedSubview(sunset)
 
         stackView.addArrangedSubview(horizontalStackView1)
-//        stackView.addArrangedSubview(horizontalStackView2)
+        stackView.addArrangedSubview(horizontalStackView2)
         
     }
     

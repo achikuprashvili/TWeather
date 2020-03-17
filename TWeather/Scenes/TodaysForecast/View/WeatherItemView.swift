@@ -51,7 +51,6 @@ class WeatherItemView: UIView {
         
         self.translatesAutoresizingMaskIntoConstraints = false
         self.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        self.widthAnchor.constraint(equalToConstant: 60).isActive = true
         self.backgroundColor = UIColor.AppColor.backgroundColor
         
     }
